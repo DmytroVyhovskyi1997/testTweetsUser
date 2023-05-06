@@ -1,13 +1,13 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = `https://643d87eb6c30feced814bd42.mockapi.io/users`;
+const BASE_URL = `645680d65f9a4f236145f441.mockapi.io`;
 
 axios.defaults.baseURL = BASE_URL;
 
 
 export const fetchUsers = createAsyncThunk(
-    'contacts/fetchAll',
+    'users/fetchAll',
     async (_, thunkAPI) => {
       try {
         const res = await axios.get('/users');
@@ -17,3 +17,4 @@ export const fetchUsers = createAsyncThunk(
       }
     }
   );
+  
