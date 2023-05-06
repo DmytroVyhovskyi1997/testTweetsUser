@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./Layout/Layout";
-import { Home } from "./pages/Home"
-import {Users} from './pages/Users'
+import { Home } from "../pages/Home"
+import {Users} from '../pages/Users'
 
 export const App = () => {
   return (
