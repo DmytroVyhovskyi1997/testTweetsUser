@@ -8,10 +8,9 @@ export const Users = () => {
     useEffect(() => {
         fetchUsers(page)
           .then(res => setUsers(res))
-          .then(res => setPage(res))
           .catch(err => console.log(err))
       }, [page])
-      
+      console.log(setPage)
     return(
         <>
         <Card users={users}/>
