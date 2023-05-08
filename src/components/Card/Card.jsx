@@ -1,8 +1,10 @@
 import answer from'images/answer.png'
 import logo from'images/logo.png'
+import { useState } from 'react';
 import { Box, Img, Stick, Ul, UserList,  User, Button,Span, ImgAnswer, ImgLogo } from "./Card.styled";
 
 export const Card = ({ users }) => {
+    const [following, isFollowing] = useState()
     return (
       <div>
         <Ul>
@@ -16,7 +18,9 @@ export const Card = ({ users }) => {
                 <User>{user}</User>
               <User>{tweets} tweets</User>
               <User>{followers} Followers</User>
-              <Button  type="button"><Span>Follow</Span></Button>
+              {isFollowing ? (<Button  type="button"><Span>Follow</Span></Button>) : 
+              <Button  type="button"><Span>Follow</Span></Button>}
+              <Button  type="button"><Span>Following</Span></Button>
                 </UserList>
              
             </Box>

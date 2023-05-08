@@ -87,3 +87,4 @@ export const ImgLogo = styled.img`
 margin-left:20px;
 margin-top:20px;
 `
+
