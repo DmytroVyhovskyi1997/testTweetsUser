@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./Layout/Layout";
-import { Home } from "../pages/Home"
+import { Home } from "../pages/Home/Home"
 import {Users} from '../pages/Users'
 
 export const App = () => {
