@@ -6,7 +6,7 @@ export const LoadMore = ({load}) => {
     return (
         <div>
       
-            <LoadMore onClick={load}>Load More</LoadMore>
+            <button onClick={load}>Load More</button>
         </div>
     )
 }
