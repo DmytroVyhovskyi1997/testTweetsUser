@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const StyledLink = styled(NavLink)`
 padding-bottom: 5px;
@@ -26,13 +26,13 @@ text-transform: uppercase;
   }
 }
 } 
-`
+`;
 export const Nav = styled.nav`
-display:flex;
-margin-left:40px;
-margin-top:30px;
-margin-bottom:30px;
-`
+  display: flex;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+`;
 export const Li = styled.li`
-padding-left:40px;
-`
+  padding-left: 40px;
+`;

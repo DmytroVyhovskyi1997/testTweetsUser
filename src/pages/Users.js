@@ -1,9 +1,9 @@
-import { Card } from "components/Card/Card";
-import { useEffect, useState } from "react";
-import { fetchUsers } from "services/Api";
+import { Card } from 'components/Card/Card';
+import { useEffect, useState } from 'react';
+import { fetchUsers } from 'services/Api';
 import GoBack from 'components/GoBack/GoBack';
-import { useLocation } from "react-router";
-import { LoadMore } from "components/LoadMore/LoadMore";
+import { useLocation } from 'react-router';
+import { LoadMore } from 'components/LoadMore/LoadMore';
 
 export const Users = () => {
   const [page, setPage] = useState(1);
@@ -12,7 +12,7 @@ export const Users = () => {
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
 
-  const getUsers = async (page) => {
+  const getUsers = async page => {
     try {
       const res = await fetchUsers(page);
       setUsers(prevUsers => [...prevUsers, ...res]);

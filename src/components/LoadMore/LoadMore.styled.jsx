@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-;
-
 export const MoreButton = styled.button`
   display: flex;
   color: black;
   list-style: none;
   padding: 5px 15px;
-  margin:auto;
+  margin: auto;
   margin-bottom: 100px;
   margin-top: 50px;
   font-size: 18px;
