@@ -10,10 +10,11 @@ border-radius: 20px;
 `
 
 export const Ul = styled.ul`
-display:flex;
-justify-content: space-evenly;
-gap:48px;
-padding:0;
+display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 0px;
+    justify-content: space-around;
 `
 
 export const Img = styled.img`

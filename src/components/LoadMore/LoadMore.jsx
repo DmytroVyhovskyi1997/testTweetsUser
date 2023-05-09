@@ -1,12 +1,12 @@
 
 
-export const LoadMore = ({loading}) => {
+export const LoadMore = ({load}) => {
 
     
     return (
         <div>
       
-            <button onClick={loading}>Load More</button>
+            <LoadMore onClick={load}>Load More</LoadMore>
         </div>
     )
 }
